@@ -1,13 +1,23 @@
-# GUD - Gauss USD Stable
+# GUD Stable Token
 
-This contract creates a Stable Token for the Gauss Ecosystem by "Wrapping" an existing stable.
+![Gauss Gang](assets/gauss-gang.png)
 
-Try running some of the following tasks:
+Solidity implementation of the GUD stable-token component for the Gauss ecosystem. The project uses Hardhat for compilation, tests, and local development.
 
-```shell
-npx hardhat help
+## Contents
+
+- `contracts/` — token and supporting Solidity contracts
+- `flattenedContracts/` — flattened sources for review or verification workflows
+- `test/` — automated tests
+
+## Development
+
+```bash
+npm install
+npx hardhat compile
 npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
 ```
+
+## Security and deployment
+
+Treat this code as security-sensitive financial infrastructure. Keep deployment configuration outside the repository and obtain an appropriate review before production use.
